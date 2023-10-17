@@ -1,0 +1,50 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    ":semanticCommits"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["major"],
+      "semanticCommitType": ":boom: feat",
+      "commitMessagePrefix": "{{semanticCommitType}}({{semanticCommitScope}})!:"
+    },
+    {
+      "matchUpdateTypes": ["minor"],
+      "semanticCommitType": ":dizzy: feat"
+    },
+    {
+      "matchUpdateTypes": ["patch"],
+      "semanticCommitType": ":arrow_up: fix"
+    },
+    {
+      "matchUpdateTypes": ["digest"],
+      "semanticCommitType": ":arrow_up: chore"
+    },
+    {
+      "matchDatasources": ["docker"],
+      "semanticCommitScope": "container-image"
+    },
+    {
+      "matchDatasources": ["galaxy-collection"],
+      "semanticCommitScope": "ansible-collection"
+    },
+    {
+      "matchDatasources": ["galaxy"],
+      "semanticCommitScope": "ansible"
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "semanticCommitType": "ci",
+      "semanticCommitScope": "github-action"
+    },
+    {
+      "matchDatasources": ["helm"],
+      "semanticCommitScope": "helm"
+    },
+    {
+      "matchDatasources": ["terraform-provider"],
+      "semanticCommitScope": "terraform-provider"
+    }
+  ]
+}
