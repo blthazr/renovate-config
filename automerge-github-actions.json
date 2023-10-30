@@ -10,8 +10,7 @@
       "matchManagers": ["github-actions"],
       "matchUpdateTypes": [
         "patch",
-        "minor",
-        "digest"
+        "minor"
       ]
     }
   ]
