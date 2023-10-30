@@ -23,7 +23,7 @@
     },
     {
       "matchDatasources": ["docker"],
-      "semanticCommitScope": "container-image"
+      "semanticCommitScope": "docker-image"
     },
     {
       "matchDatasources": ["galaxy-collection"],
@@ -40,7 +40,7 @@
     },
     {
       "matchDatasources": ["helm"],
-      "semanticCommitScope": "helm"
+      "semanticCommitScope": "helm-chart"
     },
     {
       "matchDatasources": ["terraform-provider"],
