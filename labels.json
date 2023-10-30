@@ -37,6 +37,10 @@
       "addLabels": ["renovate/helm"]
     },
     {
+      "matchManagers": ["pre-commit"],
+      "addLabels": ["renovate/pre-commit"]
+    },
+    {
       "matchDatasources": ["terraform-provider"],
       "addLabels": ["renovate/terraform"]
     }
