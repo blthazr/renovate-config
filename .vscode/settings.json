@@ -1,0 +1,13 @@
+{
+  /*+--- Core ---+*/
+  "files.associations": {
+    "**/*.json": "jsonc"
+  }
+
+  /*+--- Color Theme ---+*/
+
+  /*+--- Language Scopes ---+*/
+
+  /*+--- Extensions ---+*/
+
+}
