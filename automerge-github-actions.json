@@ -9,6 +9,7 @@
       "ignoreTests": true,
       "matchManagers": ["github-actions"],
       "matchUpdateTypes": [
+        "digest",
         "patch",
         "minor"
       ]
