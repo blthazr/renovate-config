@@ -30,8 +30,10 @@
       "semanticCommitScope": "ansible-collection"
     },
     {
-      "matchDatasources": ["galaxy"],
-      "semanticCommitScope": "ansible"
+      "matchDatasources": [
+        "galaxy-role"
+      ],
+      "semanticCommitScope": "ansible-role"
     },
     {
       "matchManagers": ["github-actions"],
