@@ -7,9 +7,7 @@
       "automerge": true,
       "automergeType": "branch",
       "ignoreTests": true,
-      "matchDatasources": [
-        "galaxy-collection"
-      ],
+      "matchDatasources": ["galaxy-collection"],
       "matchUpdateTypes": [
         "patch",
         "minor"
