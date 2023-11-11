@@ -8,8 +8,8 @@
       "automergeType": "branch",
       "ignoreTests": true,
       "matchManagers": ["github-actions"],
+      "matchDatasources": ["github-tags"],
       "matchUpdateTypes": [
-        "digest",
         "patch",
         "minor"
       ]
