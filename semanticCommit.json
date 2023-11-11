@@ -23,22 +23,22 @@
     },
     {
       "matchDatasources": ["docker"],
-      "semanticCommitScope": "docker-image"
+      "semanticCommitScope": "container"
     },
     {
       "matchDatasources": ["galaxy-collection"],
       "semanticCommitScope": "ansible-collection"
     },
     {
-      "matchDatasources": [
-        "galaxy-role"
-      ],
+      "matchDatasources": ["galaxy-role"],
       "semanticCommitScope": "ansible-role"
     },
     {
-      "matchManagers": ["github-actions"],
-      "semanticCommitType": "ci",
-      "semanticCommitScope": "github-action"
+      "matchDatasources": [
+        "github-releases",
+        "github-tags"
+      ],
+      "semanticCommitScope": "github-release"
     },
     {
       "matchDatasources": ["helm"],
@@ -46,7 +46,12 @@
     },
     {
       "matchDatasources": ["terraform-provider"],
-      "semanticCommitScope": "terraform-provider"
+      "semanticCommitScope": "tf-provider"
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "semanticCommitType": "ci",
+      "semanticCommitScope": "github-action"
     }
   ]
 }
