@@ -23,14 +23,17 @@
     },
     {
       "matchDatasources": [
-        "galaxy",
-        "galaxy-collection"
+        "galaxy-collection",
+        "galaxy-role"
       ],
       "addLabels": ["renovate/ansible"]
     },
     {
-      "matchManagers": ["github-actions"],
-      "addLabels": ["renovate/github-action"]
+      "matchDatasources": [
+        "github-releases",
+        "github-tags"
+      ],
+      "addLabels": ["renovate/github-release"]
     },
     {
       "matchDatasources": ["helm"],
@@ -43,6 +46,10 @@
     {
       "matchDatasources": ["terraform-provider"],
       "addLabels": ["renovate/terraform"]
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "addLabels": ["renovate/github-action"]
     }
   ]
 }
