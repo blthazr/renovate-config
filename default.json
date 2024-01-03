@@ -3,10 +3,12 @@
   "extends": [
     "config:best-practices",
     "docker:enableMajor",
+    "replacements:k8s-registry-move",
     ":automergeBranch",
     ":automergeDigest",
     ":disableRateLimiting",
     ":enablePreCommit",
+    ":skipStatusChecks",
     "github>blthazr/renovate-config:commitMessage",
     "github>blthazr/renovate-config:labels",
     "github>blthazr/renovate-config:semanticCommit"
@@ -16,6 +18,9 @@
   "onboarding": false,
   "rebaseWhen": "conflicted",
   "requireConfig": "optional",
-  "suppressNotifications": ["prIgnoreNotification"],
+  "suppressNotifications": [
+    "prEditedNotification",
+    "prIgnoreNotification"
+  ],
   "timezone": "America/Chicago"
 }

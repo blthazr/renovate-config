@@ -2,11 +2,10 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "description": "Auto merge pre-commit",
+      "description": "Auto-merge pre-commit (patch, minor)",
       "addLabels": ["action/automerge"],
       "automerge": true,
       "automergeType": "branch",
-      "ignoreTests": true,
       "matchManagers": ["pre-commit"],
       "matchUpdateTypes": [
         "patch",

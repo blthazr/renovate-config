@@ -7,31 +7,27 @@
     {
       "matchUpdateTypes": ["major"],
       "semanticCommitType": ":boom: feat",
-      "commitMessagePrefix": "{{semanticCommitType}}({{semanticCommitScope}})!:"
+      "commitMessagePrefix": "{{semanticCommitType}}({{semanticCommitScope}})!:",
+      "commitMessageExtra": "( {{currentVersion}} → {{newVersion}} )"
     },
     {
       "matchUpdateTypes": ["minor"],
-      "semanticCommitType": ":dizzy: feat"
+      "semanticCommitType": ":dizzy: feat",
+      "commitMessageExtra": "( {{currentVersion}} → {{newVersion}} )"
     },
     {
       "matchUpdateTypes": ["patch"],
-      "semanticCommitType": ":arrow_up: fix"
+      "semanticCommitType": ":arrow_up: fix",
+      "commitMessageExtra": "( {{currentVersion}} → {{newVersion}} )"
     },
     {
       "matchUpdateTypes": ["digest"],
-      "semanticCommitType": ":arrow_up: chore"
+      "semanticCommitType": ":arrow_up: chore",
+      "commitMessageExtra": "( {{currentDigestShort}} → {{newDigestShort}} )"
     },
     {
       "matchDatasources": ["docker"],
       "semanticCommitScope": "container"
-    },
-    {
-      "matchDatasources": ["galaxy-collection"],
-      "semanticCommitScope": "ansible-collection"
-    },
-    {
-      "matchDatasources": ["galaxy-role"],
-      "semanticCommitScope": "ansible-role"
     },
     {
       "matchDatasources": [
@@ -41,12 +37,18 @@
       "semanticCommitScope": "github-release"
     },
     {
+      "matchDatasources": [
+        "galaxy",
+        "galaxy-collection"],
+      "semanticCommitScope": "ansible"
+    },
+    {
       "matchDatasources": ["helm"],
-      "semanticCommitScope": "helm-chart"
+      "semanticCommitScope": "helm"
     },
     {
       "matchDatasources": ["terraform-provider"],
-      "semanticCommitScope": "tf-provider"
+      "semanticCommitScope": "terraform"
     },
     {
       "matchManagers": ["github-actions"],

@@ -23,8 +23,8 @@
     },
     {
       "matchDatasources": [
-        "galaxy-collection",
-        "galaxy-role"
+        "galaxy",
+        "galaxy-collection"
       ],
       "addLabels": ["renovate/ansible"]
     },

@@ -2,11 +2,10 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "description": "Auto merge Galaxy Roles",
+      "description": "Auto-merge Galaxy Roles (patch, minor)",
       "addLabels": ["action/automerge"],
       "automerge": true,
       "automergeType": "branch",
-      "ignoreTests": true,
       "matchDatasources": ["galaxy-role"],
       "matchUpdateTypes": [
         "patch",
