@@ -2,13 +2,11 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "description": "Auto-merge Terraform providers",
       "addLabels": ["action/automerge"],
       "automerge": true,
       "automergeType": "branch",
-      "matchDatasources": [
-        "terraform-provider"
-      ],
+      "description": "Auto-merge Terraform providers",
+      "matchDatasources": ["terraform-provider"],
       "matchUpdateTypes": [
         "patch",
         "minor"

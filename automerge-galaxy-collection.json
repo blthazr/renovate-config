@@ -2,10 +2,10 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "description": "Auto-merge Galaxy Collections (patch, minor)",
       "addLabels": ["action/automerge"],
       "automerge": true,
       "automergeType": "branch",
+      "description": "Auto-merge Galaxy Collections (patch, minor)",
       "matchDatasources": ["galaxy-collection"],
       "matchUpdateTypes": [
         "patch",

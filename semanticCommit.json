@@ -5,25 +5,25 @@
   ],
   "packageRules": [
     {
-      "matchUpdateTypes": ["major"],
-      "semanticCommitType": ":boom: feat",
+      "commitMessageExtra": "( {{currentVersion}} → {{newVersion}} )",
       "commitMessagePrefix": "{{semanticCommitType}}({{semanticCommitScope}})!:",
-      "commitMessageExtra": "( {{currentVersion}} → {{newVersion}} )"
+      "matchUpdateTypes": ["major"],
+      "semanticCommitType": ":boom: feat"
     },
     {
+      "commitMessageExtra": "( {{currentVersion}} → {{newVersion}} )",
       "matchUpdateTypes": ["minor"],
-      "semanticCommitType": ":dizzy: feat",
-      "commitMessageExtra": "( {{currentVersion}} → {{newVersion}} )"
+      "semanticCommitType": ":dizzy: feat"
     },
     {
+      "commitMessageExtra": "( {{currentVersion}} → {{newVersion}} )",
       "matchUpdateTypes": ["patch"],
-      "semanticCommitType": ":arrow_up: fix",
-      "commitMessageExtra": "( {{currentVersion}} → {{newVersion}} )"
+      "semanticCommitType": ":arrow_up: fix"
     },
     {
+      "commitMessageExtra": "( {{currentDigestShort}} → {{newDigestShort}} )",
       "matchUpdateTypes": ["digest"],
-      "semanticCommitType": ":arrow_up: chore",
-      "commitMessageExtra": "( {{currentDigestShort}} → {{newDigestShort}} )"
+      "semanticCommitType": ":arrow_up: chore"
     },
     {
       "matchDatasources": ["docker"],
@@ -39,7 +39,8 @@
     {
       "matchDatasources": [
         "galaxy",
-        "galaxy-collection"],
+        "galaxy-collection"
+      ],
       "semanticCommitScope": "ansible"
     },
     {
@@ -52,8 +53,8 @@
     },
     {
       "matchManagers": ["github-actions"],
-      "semanticCommitType": "ci",
-      "semanticCommitScope": "github-action"
+      "semanticCommitScope": "github-action",
+      "semanticCommitType": "ci"
     }
   ]
 }
