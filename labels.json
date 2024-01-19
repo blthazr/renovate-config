@@ -2,54 +2,54 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "labels": ["type/major"],
-      "matchUpdateTypes": ["major"]
+      "matchUpdateTypes": ["major"],
+      "labels": ["type/major"]
     },
     {
-      "labels": ["type/minor"],
-      "matchUpdateTypes": ["minor"]
+      "matchUpdateTypes": ["minor"],
+      "labels": ["type/minor"]
     },
     {
-      "labels": ["type/patch"],
-      "matchUpdateTypes": ["patch"]
+      "matchUpdateTypes": ["patch"],
+      "labels": ["type/patch"]
     },
     {
-      "labels": ["type/digest"],
-      "matchUpdateTypes": ["digest"]
+      "matchUpdateTypes": ["digest"],
+      "labels": ["type/digest"]
     },
     {
-      "addLabels": ["renovate/container"],
-      "matchDatasources": ["docker"]
+      "matchDatasources": ["docker"],
+      "addLabels": ["renovate/container"]
     },
     {
-      "addLabels": ["renovate/ansible"],
       "matchDatasources": [
         "galaxy",
         "galaxy-collection"
-      ]
+      ],
+      "addLabels": ["renovate/ansible"]
     },
     {
-      "addLabels": ["renovate/github-release"],
       "matchDatasources": [
         "github-releases",
         "github-tags"
-      ]
+      ],
+      "addLabels": ["renovate/github-release"]
     },
     {
-      "addLabels": ["renovate/helm"],
-      "matchDatasources": ["helm"]
+      "matchDatasources": ["helm"],
+      "addLabels": ["renovate/helm"]
     },
     {
-      "addLabels": ["renovate/pre-commit"],
-      "matchManagers": ["pre-commit"]
+      "matchManagers": ["pre-commit"],
+      "addLabels": ["renovate/pre-commit"]
     },
     {
-      "addLabels": ["renovate/terraform"],
-      "matchDatasources": ["terraform-provider"]
+      "matchDatasources": ["terraform-provider"],
+      "addLabels": ["renovate/terraform"]
     },
     {
-      "addLabels": ["renovate/github-action"],
-      "matchManagers": ["github-actions"]
+      "matchManagers": ["github-actions"],
+      "addLabels": ["renovate/github-action"]
     }
   ]
 }

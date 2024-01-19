@@ -5,25 +5,25 @@
   ],
   "packageRules": [
     {
-      "commitMessageExtra": "( {{currentVersion}} → {{newVersion}} )",
-      "commitMessagePrefix": "{{semanticCommitType}}({{semanticCommitScope}})!:",
       "matchUpdateTypes": ["major"],
-      "semanticCommitType": ":boom: feat"
+      "semanticCommitType": ":boom: feat",
+      "commitMessagePrefix": "{{semanticCommitType}}({{semanticCommitScope}})!:",
+      "commitMessageExtra": "( {{currentVersion}} → {{newVersion}} )"
     },
     {
-      "commitMessageExtra": "( {{currentVersion}} → {{newVersion}} )",
       "matchUpdateTypes": ["minor"],
-      "semanticCommitType": ":dizzy: feat"
+      "semanticCommitType": ":dizzy: feat",
+      "commitMessageExtra": "( {{currentVersion}} → {{newVersion}} )"
     },
     {
-      "commitMessageExtra": "( {{currentVersion}} → {{newVersion}} )",
       "matchUpdateTypes": ["patch"],
-      "semanticCommitType": ":arrow_up: fix"
+      "semanticCommitType": ":arrow_up: fix",
+      "commitMessageExtra": "( {{currentVersion}} → {{newVersion}} )"
     },
     {
-      "commitMessageExtra": "( {{currentDigestShort}} → {{newDigestShort}} )",
       "matchUpdateTypes": ["digest"],
-      "semanticCommitType": ":arrow_up: chore"
+      "semanticCommitType": ":arrow_up: chore",
+      "commitMessageExtra": "( {{currentDigestShort}} → {{newDigestShort}} )"
     },
     {
       "matchDatasources": ["docker"],
@@ -53,8 +53,8 @@
     },
     {
       "matchManagers": ["github-actions"],
-      "semanticCommitScope": "github-action",
-      "semanticCommitType": "ci"
+      "semanticCommitType": "ci",
+      "semanticCommitScope": "github-action"
     }
   ]
 }

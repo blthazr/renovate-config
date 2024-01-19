@@ -9,6 +9,7 @@
     ":disableRateLimiting",
     ":enablePreCommit",
     ":skipStatusChecks",
+    ":timezone(America/Chicago)",
     "github>blthazr/renovate-config:commitMessage",
     "github>blthazr/renovate-config:labels",
     "github>blthazr/renovate-config:semanticCommit"
@@ -22,5 +23,5 @@
     "prEditedNotification",
     "prIgnoreNotification"
   ],
-  "timezone": "America/Chicago"
+  "platformCommit": true
 }
