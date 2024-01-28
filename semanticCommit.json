@@ -53,7 +53,6 @@
     },
     {
       "matchManagers": ["github-actions"],
-      "semanticCommitType": "ci",
       "semanticCommitScope": "github-action"
     }
   ]
