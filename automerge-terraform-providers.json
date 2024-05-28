@@ -5,7 +5,7 @@
       "addLabels": ["action/automerge"],
       "automerge": true,
       "automergeType": "branch",
-      "description": "Auto-merge Terraform providers (patch, minor)",
+      "description": ["Auto-merge Terraform providers (patch, minor)"],
       "matchDatasources": ["terraform-provider"],
       "matchUpdateTypes": [
         "patch",

@@ -8,7 +8,6 @@
     ":disableRateLimiting",
     ":enablePreCommit",
     ":skipStatusChecks",
-    ":timezone(America/Chicago)",
     "github>blthazr/renovate-config:commitMessage",
     "github>blthazr/renovate-config:labels",
     "github>blthazr/renovate-config:semanticCommit"
@@ -17,10 +16,11 @@
   "dependencyDashboardTitle": "Renovate Dashboard 🤖",
   "onboarding": false,
   "rebaseWhen": "conflicted",
-  "requireConfig": "optional",
+  "requireConfig": "ignored",
   "suppressNotifications": [
     "prEditedNotification",
     "prIgnoreNotification"
   ],
+  "timezone": "America/Chicago",
   "platformCommit": true
 }

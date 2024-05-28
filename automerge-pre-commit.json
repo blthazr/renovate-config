@@ -5,7 +5,7 @@
       "addLabels": ["action/automerge"],
       "automerge": true,
       "automergeType": "branch",
-      "description": "Auto-merge pre-commit (patch, minor)",
+      "description": ["Auto-merge pre-commit (patch, minor)"],
       "matchManagers": ["pre-commit"],
       "matchUpdateTypes": [
         "patch",
