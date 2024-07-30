@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:best-practices",
+    "config:recommended",
     "docker:enableMajor",
     "replacements:k8s-registry-move",
     ":automergeBranch",
@@ -21,6 +21,5 @@
     "prEditedNotification",
     "prIgnoreNotification"
   ],
-  "timezone": "America/Chicago",
-  "platformCommit": true
+  "timezone": "America/Chicago"
 }
